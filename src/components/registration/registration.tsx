@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import "../styles/authForm.scss"
+import "./authForm.scss"
 function FormExample() {
   const [validated, setValidated] = useState(false);
 const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
@@ -19,10 +19,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
   };
   return (
     <Form className='authForm'  noValidate validated={validated} onSubmit={handleSubmit}>
- 
-
-      
-        <Form.Group classname="authItem" as={Col} md="4" controlId="validationCustom01">
+        <Form.Group className='regItem'  as={Col} md="4" controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
           <Form.Control
             required
@@ -32,7 +29,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        <Form.Group classname="authItem" as={Col} md="4" controlId="validationCustom02">
+        <Form.Group className='regItem'   as={Col} md="4" controlId="validationCustom02">
           <Form.Label>Last name</Form.Label>
           <Form.Control
             required
@@ -42,7 +39,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        <Form.Group classname="authItem" as={Col} md="4" controlId="validationCustomUsername">
+        <Form.Group  className='regItem'   as={Col} md="4" controlId="validationCustomUsername">
           <Form.Label>Email</Form.Label>
           <InputGroup hasValidation>
 
@@ -57,7 +54,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
             </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
-        <Form.Group classname="authItem" as={Col} md="6" controlId="validationCustom03">
+        <Form.Group className='regItem'   as={Col} md="6" controlId="validationCustom03">
           <Form.Label>City</Form.Label>
           <Form.Control type="text" placeholder="City" required />
           <Form.Control.Feedback type="invalid">
@@ -65,7 +62,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group 
-        
+         className='regItem'  
         as={Col} md="3" controlId="validationCustom04">
           <Form.Label>Country</Form.Label>
           <Form.Control 
@@ -77,7 +74,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
           </Form.Control.Feedback>
         </Form.Group>
 
-      <Form.Group className="mb-3 authItem">
+      <Form.Group className="mb-3 regItem">
         <Form.Check
           required
           label="Agree to terms and conditions"
@@ -85,7 +82,8 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button className="authItem" type="submit">Submit</Button>
+     {/* <Button className=" regItem" type="submit">Submit</Button> */}
+     <Button    className='regItemBtn'   type="submit">Submit</Button>
 <Form.Group className='authItemFon'>
     
 </Form.Group>
@@ -94,3 +92,6 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
 }
 
 export default FormExample;
+
+
+

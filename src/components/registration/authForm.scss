@@ -8,6 +8,11 @@
     display: "block";
    margin: 0 auto;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   height: 650px;
+   top: 100px;
+   padding-top: 50px;
+   padding-left: 100px;
+   padding-right: 100px;
 }
 .groupWrapper {
     display: flex;
@@ -15,12 +20,15 @@
 }
 
 .authItem {
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
-    max-width: 80%;
-    width: 100%;
+ //   margin: 0 auto;
+   // max-width: 100%;
+  //  width: 100%;
+    
 
+}
+.authItemInput {
+    margin: 0 auto;
+    width: 100%;
 }
 .authItemFon {
     border-radius: 20px;
@@ -32,4 +40,17 @@
     top: 0;
     opacity: 0.1;
     z-index: -1;
+}
+.authItemBtn {
+    margin-top: 50px;
+}
+.regItem {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.regItemBtn {
+    width: 100%;
+    max-width: 100%;
+
 }

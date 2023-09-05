@@ -1,4 +1,4 @@
-import FormTextExample from "./searchHomepageInput"
+import FormTextExample from "../searchHomepageInput/searchHomepageInput"
 import Button from 'react-bootstrap/Button';
 export const SearchHomepage =()=> {
     return (

@@ -1,0 +1,1 @@
+export const arrayOfNavigationConsts = ['Picture of day', 'objects near Earth', 'Space weather', 'Photos']

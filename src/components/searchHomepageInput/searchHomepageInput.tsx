@@ -1,6 +1,6 @@
 
 import Form from 'react-bootstrap/Form';
-import "../styles/searchHomepageInput.scss"
+import "./searchHomepageInput.scss"
 import React from 'react'; 
 function FormTextExample() {
     const handle = (event: React.KeyboardEvent<HTMLInputElement>): void => {

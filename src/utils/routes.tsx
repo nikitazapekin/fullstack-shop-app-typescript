@@ -1,16 +1,34 @@
 import {Route, Routes, Navigate}  from "react-router-dom"
 import {HOMEPAGE_ROUTE, SIGN_IN_ROUTE, SIGN_UP_ROUTE} from "./consts"
 import  Homepage  from "../pages/homepage"
+import SignIn from "../pages/signin"
+import SignUp from "../pages/signup"
 const publicRoutes=[
  {
     path: HOMEPAGE_ROUTE,
     Component: Homepage
+ },
+ {
+    path: SIGN_UP_ROUTE,
+    Component: SignUp
+ },
+ {
+    path: SIGN_IN_ROUTE,
+    Component: SignIn
  }
 ]
 const privateRoutes =[
     {
         path: HOMEPAGE_ROUTE,
         Component: Homepage
+     },
+     {
+        path: SIGN_UP_ROUTE,
+        Component: SignUp
+     },
+     {
+        path: SIGN_IN_ROUTE,
+        Component: SignIn
      }
 ]
 
@@ -24,9 +42,8 @@ const AppRoutes=()=> {
 
     
 )}
-
 <Route path="*" element={<Navigate replace to={HOMEPAGE_ROUTE} />} />  
-
+    
         </Routes>
     )
     :
